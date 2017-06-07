@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextUsername"
+        android:layout_alignBottom="@+id/editTextUsername"
+        android:layout_alignLeft="@+id/editTextTweet"
+        android:text="@string/at_sign"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/timelineButton"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:hint="@string/type_username_here" />
+
+    <TextView
+        android:id="@+id/textViewTimeline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timelineButton"
+        android:layout_below="@+id/timelineButton"
+        android:maxLines="100"
+        android:scrollbars="vertical"
+        android:text="@string/timeline_here" />
+
+    <Button
+        android:id="@+id/timelineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:onClick="onTimelineButtonClick"
+        android:text="@string/timeline" />
+
+    <Button
+        android:id="@+id/tweetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextUsername"
+        android:layout_alignLeft="@+id/editTextTweet"
+        android:layout_marginBottom="43dp"
+        android:onClick="onTweetButtonClick"
+        android:text="@string/tweet" />
+
+    <EditText
+        android:id="@+id/editTextTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tweetButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:ems="10"
+        android:hint="@string/type_your_tweet_here" />
+
+    <TextView
+        android:id="@+id/textViewCountChars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tweetButton"
+        android:layout_alignBottom="@+id/tweetButton"
+        android:layout_toRightOf="@+id/timelineButton"
+        android:text="@string/zero" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">13_08</string>
+    <string name="tweet">Tweet</string>
+    <string name="timeline">Timeline</string>
+    <string name="type_your_tweet_here">Type your tweet here</string>
+    <string name="type_username_here">Type a username here</string>
+    <string name="at_sign">\@</string>
+    <string name="timeline_here">User\'s timeline will appear here</string>
+    <string name="zero">0</string>
+    <string name="success">Success!</string>
+    <string name="twitter_failure">Call to Twitter failed</string>
+    <string name="general_failure">Error (not from a Twitter call)</string>
+</resources>
